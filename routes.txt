@@ -1,0 +1,88 @@
+
+  GET|HEAD        / .................................................................................................. 
+  GET|HEAD        confirm-password ........................ password.confirm › Auth\ConfirmablePasswordController@show
+  POST            confirm-password .......................................... Auth\ConfirmablePasswordController@store
+  GET|HEAD        dashboard ................................................................................ dashboard
+  GET|HEAD        dashboard/admin .................................................................... dashboard.admin
+  GET|HEAD        dashboard/dokter .................................................................. dashboard.dokter
+  GET|HEAD        dashboard/kasir .................................................................... dashboard.kasir
+  GET|HEAD        dashboard/pendaftar ............................................................ dashboard.pendaftar
+  POST            email/verification-notification verification.send › Auth\EmailVerificationNotificationController@st…
+  GET|HEAD        forgot-password ......................... password.request › Auth\PasswordResetLinkController@create
+  POST            forgot-password ............................ password.email › Auth\PasswordResetLinkController@store
+  GET|HEAD        kunjungan/create ..................................... kunjungan.create › KunjunganController@create
+  POST            kunjungan/store ........................................ kunjungan.store › KunjunganController@store
+  GET|HEAD        laporan .................................................... laporan.index › LaporanController@index
+  GET|HEAD        laporan/kunjungan .................................. laporan.kunjungan › LaporanController@kunjungan
+  GET|HEAD        laporan/kunjungan/pdf ..................... laporan.kunjungan.pdf › LaporanController@cetakKunjungan
+  GET|HEAD        laporan/pembayaran ............................... laporan.pembayaran › LaporanController@pembayaran
+  GET|HEAD        laporan/pembayaran/pdf .................. laporan.pembayaran.pdf › LaporanController@cetakPembayaran
+  GET|HEAD        login ........................................... login › Auth\AuthenticatedSessionController@create
+  POST            login .................................................... Auth\AuthenticatedSessionController@store
+  POST            logout ........................................ logout › Auth\AuthenticatedSessionController@destroy
+  GET|HEAD        obat ............................................................. obat.index › ObatController@index
+  POST            obat ............................................................. obat.store › ObatController@store
+  GET|HEAD        obat/create .................................................... obat.create › ObatController@create
+  GET|HEAD        obat/{obat} ........................................................ obat.show › ObatController@show
+  PUT|PATCH       obat/{obat} .................................................... obat.update › ObatController@update
+  DELETE          obat/{obat} .................................................. obat.destroy › ObatController@destroy
+  GET|HEAD        obat/{obat}/edit ................................................... obat.edit › ObatController@edit
+  GET|HEAD        pasien ....................................................... pasien.index › PasienController@index
+  POST            pasien ....................................................... pasien.store › PasienController@store
+  GET|HEAD        pasien/create .............................................. pasien.create › PasienController@create
+  GET|HEAD        pasien/{pasien} ................................................ pasien.show › PasienController@show
+  PUT|PATCH       pasien/{pasien} ............................................ pasien.update › PasienController@update
+  DELETE          pasien/{pasien} .......................................... pasien.destroy › PasienController@destroy
+  GET|HEAD        pasien/{pasien}/edit ........................................... pasien.edit › PasienController@edit
+  PUT             password .......................................... password.update › Auth\PasswordController@update
+  GET|HEAD        pegawai .................................................... pegawai.index › PegawaiController@index
+  POST            pegawai .................................................... pegawai.store › PegawaiController@store
+  GET|HEAD        pegawai/create ........................................... pegawai.create › PegawaiController@create
+  GET|HEAD        pegawai/{pegawai} ............................................ pegawai.show › PegawaiController@show
+  PUT|PATCH       pegawai/{pegawai} ........................................ pegawai.update › PegawaiController@update
+  DELETE          pegawai/{pegawai} ...................................... pegawai.destroy › PegawaiController@destroy
+  GET|HEAD        pegawai/{pegawai}/edit ....................................... pegawai.edit › PegawaiController@edit
+  GET|HEAD        pembayaran ........................................... pembayaran.index › PembayaranController@index
+  POST            pembayaran ........................................... pembayaran.store › PembayaranController@store
+  GET|HEAD        pembayaran/create .................................. pembayaran.create › PembayaranController@create
+  GET|HEAD        pembayaran/create/{kunjungan_id} ................... pembayaran.create › PembayaranController@create
+  POST            pembayaran/store ..................................... pembayaran.store › PembayaranController@store
+  GET|HEAD        pembayaran/{pembayaran} ................................ pembayaran.show › PembayaranController@show
+  PUT|PATCH       pembayaran/{pembayaran} ............................ pembayaran.update › PembayaranController@update
+  DELETE          pembayaran/{pembayaran} .......................... pembayaran.destroy › PembayaranController@destroy
+  GET|HEAD        pembayaran/{pembayaran}/edit ........................... pembayaran.edit › PembayaranController@edit
+  GET|HEAD        pendaftaran ........................................ pendaftaran.index › PendaftaranController@index
+  POST            pendaftaran ........................................ pendaftaran.store › PendaftaranController@store
+  GET|HEAD        pendaftaran/create ............................... pendaftaran.create › PendaftaranController@create
+  GET|HEAD        pendaftaran/{pendaftaran} ............................ pendaftaran.show › PendaftaranController@show
+  PUT|PATCH       pendaftaran/{pendaftaran} ........................ pendaftaran.update › PendaftaranController@update
+  DELETE          pendaftaran/{pendaftaran} ...................... pendaftaran.destroy › PendaftaranController@destroy
+  GET|HEAD        pendaftaran/{pendaftaran}/edit ....................... pendaftaran.edit › PendaftaranController@edit
+  GET|HEAD        profile ...................................................... profile.edit › ProfileController@edit
+  PATCH           profile .................................................. profile.update › ProfileController@update
+  DELETE          profile ................................................ profile.destroy › ProfileController@destroy
+  GET|HEAD        register ........................................... register › Auth\RegisteredUserController@create
+  POST            register ....................................................... Auth\RegisteredUserController@store
+  POST            reset-password ................................... password.store › Auth\NewPasswordController@store
+  GET|HEAD        reset-password/{token} .......................... password.reset › Auth\NewPasswordController@create
+  GET|HEAD        storage/{path} ....................................................................... storage.local
+  GET|HEAD        tindakan ................................................. tindakan.index › TindakanController@index
+  POST            tindakan ................................................. tindakan.store › TindakanController@store
+  GET|HEAD        tindakan/create ........................................ tindakan.create › TindakanController@create
+  GET|HEAD        tindakan/{tindakan} ........................................ tindakan.show › TindakanController@show
+  PUT|PATCH       tindakan/{tindakan} .................................... tindakan.update › TindakanController@update
+  DELETE          tindakan/{tindakan} .................................. tindakan.destroy › TindakanController@destroy
+  GET|HEAD        tindakan/{tindakan}/edit ................................... tindakan.edit › TindakanController@edit
+  GET|HEAD        up ................................................................................................. 
+  GET|HEAD        verify-email .......................... verification.notice › Auth\EmailVerificationPromptController
+  GET|HEAD        verify-email/{id}/{hash} .......................... verification.verify › Auth\VerifyEmailController
+  GET|HEAD        wilayah .................................................... wilayah.index › WilayahController@index
+  POST            wilayah .................................................... wilayah.store › WilayahController@store
+  GET|HEAD        wilayah/create ........................................... wilayah.create › WilayahController@create
+  GET|HEAD        wilayah/{wilayah} ............................................ wilayah.show › WilayahController@show
+  PUT|PATCH       wilayah/{wilayah} ........................................ wilayah.update › WilayahController@update
+  DELETE          wilayah/{wilayah} ...................................... wilayah.destroy › WilayahController@destroy
+  GET|HEAD        wilayah/{wilayah}/edit ....................................... wilayah.edit › WilayahController@edit
+
+                                                                                                   Showing [84] routes
+
